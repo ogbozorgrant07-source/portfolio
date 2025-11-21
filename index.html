@@ -1,65 +1,48 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ogbozor Grant Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Base */
-    body { font-family: 'Inter', sans-serif; margin:0; padding:0; background:#f0f2f5; color:#111827; }
-    a { color:#1e40af; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-
-    /* Header */
-    header { text-align:center; padding:100px 20px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white; }
-    header h1 { font-size:4rem; margin-bottom:10px; }
-    header p { font-size:1.5rem; }
-
-    /* Navigation */
-    nav { display:flex; justify-content:center; gap:30px; padding:20px 0; background:white; box-shadow:0 4px 10px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000; }
-    nav a { font-weight:600; font-size:1.1rem; }
-
-    /* Sections */
-    section { max-width:1000px; margin:60px auto; padding:0 20px; }
-    .card { background:white; border-radius:20px; padding:30px; box-shadow:0 8px 25px rgba(0,0,0,0.1); margin-bottom:40px; transition: transform 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    h2 { font-size:2.5rem; margin-bottom:20px; color:#1e3a8a; }
-    p { line-height:1.6; font-size:1.1rem; }
-
-    /* Grid */
-    .grid { display:grid; grid-template-columns:1fr; gap:20px; }
-    @media(min-width:768px) { .grid { grid-template-columns:repeat(2, 1fr); } }
-    @media(min-width:1024px) { .grid { grid-template-columns:repeat(3, 1fr); } }
-
-    /* Project cards */
-    .project-card { border-radius:15px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
-    .project-card:hover { transform: scale(1.05); }
-    .project-card img { width:100%; height:200px; object-fit:cover; }
-    .project-card .content { padding:15px; }
-    .project-card .content h3 { margin:0 0 10px 0; color:#1e40af; }
-
-    /* Buttons */
-    button { padding:10px 20px; background:#1e40af; color:#fff; border:none; border-radius:10px; cursor:pointer; transition: background 0.3s; }
-    button:hover { background:#3b82f6; }
-
-    /* Footer */
-    footer { text-align:center; padding:40px 20px; background:#1e3a8a; color:white; margin-top:60px; }
-
-    /* Animations */
-    .fade-in { opacity:0; animation: fadeIn 1s forwards; }
-    @keyframes fadeIn { to { opacity:1; } }
-
-    /* Hero button */
-    .hero-btn { margin-top:30px; padding:15px 30px; font-size:1.2rem; border-radius:15px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ogbozor Grant Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; margin:0; padding:0; background:#f0f2f5; color:#111827; }
+a { color:#1e40af; text-decoration:none; }
+a:hover { text-decoration:underline; }
+header { text-align:center; padding:100px 20px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white; }
+header h1 { font-size:4rem; margin-bottom:10px; }
+header p { font-size:1.5rem; }
+nav { display:flex; justify-content:center; gap:30px; padding:20px 0; background:white; box-shadow:0 4px 10px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000; }
+nav a { font-weight:600; font-size:1.1rem; }
+section { max-width:1000px; margin:60px auto; padding:0 20px; }
+.card { background:white; border-radius:20px; padding:30px; box-shadow:0 8px 25px rgba(0,0,0,0.1); margin-bottom:40px; transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); }
+h2 { font-size:2.5rem; margin-bottom:20px; color:#1e3a8a; }
+p { line-height:1.6; font-size:1.1rem; }
+.grid { display:grid; grid-template-columns:1fr; gap:20px; }
+@media(min-width:768px) { .grid { grid-template-columns:repeat(2, 1fr); } }
+@media(min-width:1024px) { .grid { grid-template-columns:repeat(3, 1fr); } }
+.project-card { border-radius:15px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.project-card:hover { transform: scale(1.05); }
+.project-card img { width:100%; height:200px; object-fit:cover; }
+.project-card .content { padding:15px; }
+.project-card .content h3 { margin:0 0 10px 0; color:#1e40af; }
+button { padding:10px 20px; background:#1e40af; color:#fff; border:none; border-radius:10px; cursor:pointer; transition: background 0.3s; }
+button:hover { background:#3b82f6; }
+footer { text-align:center; padding:40px 20px; background:#1e3a8a; color:white; margin-top:60px; }
+.fade-in { opacity:0; animation: fadeIn 1s forwards; }
+@keyframes fadeIn { to { opacity:1; } }
+.hero-btn { margin-top:30px; padding:15px 30px; font-size:1.2rem; border-radius:15px; }
+input, select { padding:10px; font-size:16px; margin-top:5px; border-radius:8px; border:1px solid #ccc; }
+button.small-btn { padding:8px 15px; font-size:16px; margin-top:5px; }
+.about-fun-facts { background:#eef2ff; padding:15px; border-radius:15px; margin-top:15px; }
+</style>
 </head>
 <body>
 
 <header class="fade-in">
   <h1>Ogbozor Grant</h1>
   <p>SS3 Student · Christy Caleb College · Programmer & Web Developer</p>
-  <button class="hero-btn">View My Work</button>
 </header>
 
 <nav>
@@ -73,6 +56,15 @@
   <div class="card fade-in">
     <h2>About Me</h2>
     <p>Hello! I'm Ogbozor Grant, a passionate programmer and web developer currently studying in SS3 at Christy Caleb College. I specialize in building modern, responsive web applications with clean, efficient code. I enjoy problem-solving, learning new technologies, and creating projects that make an impact.</p>
+    <div class="about-fun-facts">
+      <h3>Fun Facts / Interests:</h3>
+      <ul>
+        <li>Loves coding challenges & algorithm problems</li>
+        <li>Enjoys designing clean user interfaces</li>
+        <li>Interested in AI and web automation</li>
+        <li>Passionate about learning new web technologies</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -80,27 +72,27 @@
   <h2>Projects</h2>
   <div class="grid fade-in">
     <div class="project-card">
-      <img src="https://via.placeholder.com/400x200.png?text=Portfolio+Website" alt="Portfolio">
-      <div class="content">
-        <h3>Portfolio Website</h3>
-        <p>A clean and responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/400x200.png?text=Web+App" alt="Web App">
-      <div class="content">
-        <h3>Web Application</h3>
-        <p>A small web app demonstrating interactive features and modern UI design.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-    <div class="project-card">
       <img src="https://via.placeholder.com/400x200.png?text=Calculator+App" alt="Calculator App">
       <div class="content">
         <h3>Calculator App</h3>
-        <p>A fully functional calculator built with JavaScript, handling basic arithmetic operations.</p>
-        <a href="#">View Project</a>
+        <p>A fully functional calculator handling basic arithmetic operations.</p>
+        <a href="#" onclick="openCalculator();return false;">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200.png?text=Mini+Search+Tool" alt="Mini Search Tool">
+      <div class="content">
+        <h3>Mini Search Tool</h3>
+        <p>Search Google or a list of preset links quickly and efficiently.</p>
+        <a href="#" onclick="openSearch();return false;">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200.png?text=Color+Palette+Generator" alt="Color Palette Generator">
+      <div class="content">
+        <h3>Color Palette Generator</h3>
+        <p>Generates random color palettes for design inspiration.</p>
+        <a href="#" onclick="openColors();return false;">View Project</a>
       </div>
     </div>
   </div>
@@ -109,7 +101,6 @@
 <section id="skills">
   <div class="card fade-in">
     <h2>Skills</h2>
-    <p>Here are some of my key skills and technologies I work with:</p>
     <ul>
       <li>HTML, CSS, JavaScript</li>
       <li>React & Frontend Development</li>
@@ -125,12 +116,58 @@
     <h2>Contact</h2>
     <p>Phone: <a href="tel:08039403156">08039403156</a></p>
     <p>Email: <a href="mailto:ogbozorgrant07@gmail.com">ogbozorgrant07@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ogbozor-grant" target="_blank">linkedin.com/in/ogbozor-grant</a></p>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Ogbozor Grant. All
+  <p>&copy; 2025 Ogbozor Grant. All Rights Reserved.</p>
+</footer>
 
+<script>
+function openCalculator() {
+  const win = window.open('', '_blank');
+  win.document.write(`
+    <h1>Calculator App</h1>
+    <input type="text" id="calcInput" placeholder="0" style="width:200px; font-size:20px;">
+    <br>
+    <button onclick="document.getElementById('calcInput').value = eval(document.getElementById('calcInput').value)">=</button>
+    <button onclick="document.getElementById('calcInput').value=''">C</button>
+  `);
+}
 
+function openSearch() {
+  const win = window.open('', '_blank');
+  win.document.write(`
+    <h1>Mini Search Tool</h1>
+    <input type="text" id="searchInput" placeholder="Type your query" style="width:300px; font-size:18px;">
+    <button onclick="window.open('https://www.google.com/search?q=' + encodeURIComponent(document.getElementById('searchInput').value))">Search Google</button>
+  `);
+}
 
+function openColors() {
+  const win = window.open('', '_blank');
+  win.document.write(`
+    <h1>Color Palette Generator</h1>
+    <div id="palette" style="display:flex; gap:10px; margin-top:20px;"></div>
+    <button onclick="generateColors()">Generate Colors</button>
+    <script>
+      function generateColors() {
+        const container = document.getElementById('palette');
+        container.innerHTML = '';
+        for(let i=0;i<5;i++){
+          const color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          const div = document.createElement('div');
+          div.style.background=color;
+          div.style.width='100px';
+          div.style.height='100px';
+          div.title=color;
+          container.appendChild(div);
+        }
+      }
+    <\/script>
+  `);
+}
+</script>
+
+</body>
+</html>
